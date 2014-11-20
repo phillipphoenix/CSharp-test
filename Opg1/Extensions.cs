@@ -1,11 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Opg1
 {
+    /// <summary>
+    /// Implement the missing method(s).
+    /// Your implementation must pass as many tests as possible.
+    /// </summary>
     public static class Extensions
     {
         /// <summary>
-        /// Searches for a given value.
+        /// Searches for a given value and returns found elements.
+        /// Supports tree search.
         /// </summary>
         /// <typeparam name="THaystack">Type of the haystack.</typeparam>
         /// <typeparam name="TNeedle">Type of the needle.</typeparam>
@@ -16,7 +22,7 @@ namespace Opg1
         {
             // Your implementation goes here!
             // GL HF
-            return default(TNeedle);
+            throw new NotImplementedException();
         }
     }
 }
