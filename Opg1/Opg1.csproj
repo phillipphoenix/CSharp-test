@@ -46,7 +46,8 @@
   <ItemGroup>
     <Compile Include="Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests.cs" />
+    <Compile Include="Tests\ClosestTests.cs" />
+    <Compile Include="Tests\FindTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

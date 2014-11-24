@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace Opg1
 {
     [TestFixture]
-    public class Tests
+    public class FindTests
     {
         [Test]
         public void Find_TextSearchFlatStructure_Found()
@@ -51,7 +51,7 @@ namespace Opg1
         }
         
         [Test]
-        public void Find_TextSearchTreeStructure_Found()
+        public void Find_TextSearchNestedStructure_Found()
         {
             // Arrange
             const string needle = "Ford";
@@ -67,7 +67,7 @@ namespace Opg1
         }
 
         [Test]
-        public void Find_ObjectSearchTreeStructure_Found()
+        public void Find_ObjectSearchNestedStructure_Found()
         {
             // Arrange
             var needle = new Tuple<int>(13);
@@ -80,22 +80,6 @@ namespace Opg1
 
             // Assert
             Assert.AreEqual(needle, found);
-        }
-
-        [Test]
-        public void Find_TextSearchTreeStructure_FoundMultiple()
-        {
-            // Arrange
-            const string needle = "Ford";
-            var fruits = new List<string> { "Banna", needle, "Orange", "Apple" };
-            var cars = new List<string> { "SAAB", "VW", "Audi", "Volve", needle };
-            var haystack = new List<List<string>> { fruits, cars };
-
-            // Act
-            var found = haystack.Find(needle);
-
-            // Assert
-            Assert.That(found.Count() == 2);
         }
     }
 }
