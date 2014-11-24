@@ -1,13 +1,11 @@
-﻿# Find the needle
+﻿# What the Find
 
-Implement the following extension method located in Extensions.cs
+Implement the missing extension methods located in Extensions.cs
 
 ```c#
-public static TNeedle Find<THaystack,TNeedle>(this IEnumerable<THaystack> haystack, TNeedle needle)
-{
-    // your code
-}
+public static int? FindNearest(this IEnumerable<int> list, int value)
+
+public static Node<T> FindWhere<T>(this Node<T> node, Func<Node<T>, bool> predicate, Func<Node<T>, IEnumerable<Node<T>>> next)
 ```
 
-The method is expected to be able to search a tree structure.
-A few tests have been supplied for your testing pleasure!
+A few tests (in Tests folder) have been supplied for your testing pleasure!
