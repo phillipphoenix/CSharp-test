@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Opg1
@@ -18,7 +19,23 @@ namespace Opg1
         /// <returns>The nearest value.</returns>
         public static int? FindNearest(this IEnumerable<int> list, int value)
         {
-            throw new NotImplementedException();
+
+            int? current = null; // The currently closest value.
+            int distance = int.MaxValue; // The distance from the searched for value to the current closest value.
+
+            foreach (int n in list)
+            {
+                // Check if the absolute value between value and the current number in the list is less than the currently saved distance.
+                if (Math.Abs(n - value) < distance)
+                {
+                    // If so, save the current number in the list as the closest one and save its distance to the value searched for.
+                    current = n;
+                    distance = Math.Abs(n - value);
+                }
+            }
+
+            // Return the value found (if any) or null, if no values found.
+            return current;
         }
 
         /// <summary>
@@ -31,7 +48,24 @@ namespace Opg1
         /// <returns>Node satisfying the condtion, else null</returns>
         public static Node<T> FindWhere<T>(this Node<T> node, Func<Node<T>, bool> predicate, Func<Node<T>, IEnumerable<Node<T>>> next)
         {
-            throw new NotImplementedException();
+            if (predicate(node)) // If the current node satisfies the predicate, return it.
+            {
+                return node;
+            }
+            else // If not, call the function on all the children and return the result if they satisfied the predicate.
+            {
+                IEnumerable<Node<T>> children = next(node);
+                foreach (Node<T> child in children)
+                {
+                    Node<T> result = child.FindWhere(predicate, next);
+                    if (result != null)
+                    {
+                        return result;
+                    }
+                }
+                // If no children (or children's children) satisfied the predicate, return null.
+                return null;
+            }
         }
     }
 }
