@@ -81,6 +81,22 @@
     <Compile Include="Migrations\201511170015567_productOrderManytoMany.Designer.cs">
       <DependentUpon>201511170015567_productOrderManytoMany.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511172335105_SaleEnds.cs" />
+    <Compile Include="Migrations\201511172335105_SaleEnds.Designer.cs">
+      <DependentUpon>201511172335105_SaleEnds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511172336269_SaleEnds2.cs" />
+    <Compile Include="Migrations\201511172336269_SaleEnds2.Designer.cs">
+      <DependentUpon>201511172336269_SaleEnds2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511172341104_SaleEnds3.cs" />
+    <Compile Include="Migrations\201511172341104_SaleEnds3.Designer.cs">
+      <DependentUpon>201511172341104_SaleEnds3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511180005446_SaleEndsRemoved.cs" />
+    <Compile Include="Migrations\201511180005446_SaleEndsRemoved.Designer.cs">
+      <DependentUpon>201511180005446_SaleEndsRemoved.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebShopContext.cs" />
@@ -112,6 +128,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511170015567_productOrderManytoMany.resx">
       <DependentUpon>201511170015567_productOrderManytoMany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511172335105_SaleEnds.resx">
+      <DependentUpon>201511172335105_SaleEnds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511172336269_SaleEnds2.resx">
+      <DependentUpon>201511172336269_SaleEnds2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511172341104_SaleEnds3.resx">
+      <DependentUpon>201511172341104_SaleEnds3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511180005446_SaleEndsRemoved.resx">
+      <DependentUpon>201511180005446_SaleEndsRemoved.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
