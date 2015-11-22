@@ -34,6 +34,7 @@ namespace Opg2.Entities
             Currency = currency;
             DeliveryAddress = deliveryAddress;
             Customer = customer;
+            Customer.Orders.Add(this);
 
             // Add the products and increase the price.
             foreach (var p in products)

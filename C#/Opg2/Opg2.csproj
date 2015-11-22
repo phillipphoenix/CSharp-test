@@ -102,6 +102,10 @@
     <Compile Include="Migrations\201511221748486_SeparateAddress.Designer.cs">
       <DependentUpon>201511221748486_SeparateAddress.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511221833168_CustomerOrderList.cs" />
+    <Compile Include="Migrations\201511221833168_CustomerOrderList.Designer.cs">
+      <DependentUpon>201511221833168_CustomerOrderList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebShopContext.cs" />
@@ -148,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511221748486_SeparateAddress.resx">
       <DependentUpon>201511221748486_SeparateAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511221833168_CustomerOrderList.resx">
+      <DependentUpon>201511221833168_CustomerOrderList.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
