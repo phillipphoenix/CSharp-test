@@ -1,0 +1,9 @@
+package opg2;
+
+public class Producer {
+
+	private int id;
+	private String name;
+	private String description;
+	
+}

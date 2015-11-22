@@ -1,0 +1,93 @@
+package opg2.entities;
+
+import java.util.List;
+
+public class Customer {
+	
+	private int id;
+	private String title;
+	private String firstName;
+	private String lastName;
+	private Address address;
+	private String phone;
+	private String email;
+	private List<Order> orders;
+	
+	public Customer(String title, String firstName, String lastName, Address address, String phone, String email) {
+		this.title = title;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.phone = phone;
+		this.email = email;
+	}
+
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		lastName = lastName;
+	}
+	
+	public String getFullName() {
+		return firstName + " " + lastName;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public List<Order> getOrders() {
+		return orders;
+	}
+	
+	public void addOrder(Order o) {
+		orders.add(o);
+	}
+
+}

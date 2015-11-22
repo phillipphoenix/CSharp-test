@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="opg1.FizzBuzz"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="opg2.entities.Product"/>
+<fullyQualifiedTypeName name="opg2.entities.Price"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="opg2.entities.Producer"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="opg2.entities.Order"/>
+<fullyQualifiedTypeName name="opg2.entities.Customer"/>
+<fullyQualifiedTypeName name="opg2.entities.Address"/>
+<fullyQualifiedTypeName name="opg2.entities.Order.OrderStatus"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

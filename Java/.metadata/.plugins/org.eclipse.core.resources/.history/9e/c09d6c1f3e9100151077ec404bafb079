@@ -1,0 +1,95 @@
+package opg2;
+
+import java.util.List;
+
+public class Order {
+	
+	private int id;
+	private List<Product> products;
+	private Customer customer;
+	private double totalPrice;
+	private String currency;
+	private Address deliveryAddress;
+	private String trackAndTraceNb;
+	private OrderStatus status;
+
+	public Order(List<Product> products, Customer customer, double totalPrice, String currency, Address deliveryAddress,
+			String trackAndTraceNb, OrderStatus status) {
+		this.products = products;
+		this.customer = customer;
+		this.totalPrice = totalPrice;
+		this.currency = currency;
+		this.deliveryAddress = deliveryAddress;
+		this.trackAndTraceNb = trackAndTraceNb;
+		this.status = status;
+	}
+
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public List<Product> getProducts() {
+		return products;
+	}
+
+	public void setProducts(List<Product> products) {
+		this.products = products;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public double getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(double totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+
+	public String getCurrency() {
+		return currency;
+	}
+
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
+
+	public Address getDeliveryAddress() {
+		return deliveryAddress;
+	}
+
+	public void setDeliveryAddress(Address deliveryAddress) {
+		this.deliveryAddress = deliveryAddress;
+	}
+
+	public String getTrackAndTraceNb() {
+		return trackAndTraceNb;
+	}
+
+	public void setTrackAndTraceNb(String trackAndTraceNb) {
+		this.trackAndTraceNb = trackAndTraceNb;
+	}
+
+	public OrderStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(OrderStatus status) {
+		this.status = status;
+	}
+
+	public enum OrderStatus {
+		UNSHIPPED, SHIPPED, CANCELLED
+	}
+	
+}

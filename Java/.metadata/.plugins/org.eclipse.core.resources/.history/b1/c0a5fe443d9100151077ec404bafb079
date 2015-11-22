@@ -1,0 +1,11 @@
+package opg2;
+
+import java.util.Date;
+
+public class Price {
+
+	private double value;
+	private String currency;
+	private Date dateFrom;
+	
+}

@@ -1,0 +1,53 @@
+package opg2;
+
+import java.util.Date;
+
+public class Price {
+
+	private int id;
+	private double value;
+	private String currency;
+	/**
+	 * The date from which this price is active.
+	 */
+	private Date fromDate;
+	
+	public Price(double value, String currency, Date dateFrom) {
+		this.value = value;
+		this.currency = currency;
+		this.fromDate = dateFrom;
+	}
+
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public double getValue() {
+		return value;
+	}
+
+	public void setValue(double value) {
+		this.value = value;
+	}
+
+	public String getCurrency() {
+		return currency;
+	}
+
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
+
+	public Date getDateFrom() {
+		return fromDate;
+	}
+
+	public void setDateFrom(Date dateFrom) {
+		this.fromDate = dateFrom;
+	}
+	
+}

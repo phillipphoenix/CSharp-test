@@ -1,0 +1,17 @@
+package opg2;
+
+import java.util.Calendar;
+import opg2.entities.Price;
+import opg2.entities.Product;
+
+public class Opg2Tester {
+
+	public static void main(String[] args) {
+		// Create a couple of products.
+		Product p1 = new Product("p1", "Shampoo La Piaf", "This is an amazingly fresh smelling, but expensive shampoo.");
+		Calendar cal = Calendar.getInstance();
+		cal.set(2015, 11, 22);
+		p1.addPrice(new Price(100, "DKK", cal.getTime()));
+	}
+	
+}

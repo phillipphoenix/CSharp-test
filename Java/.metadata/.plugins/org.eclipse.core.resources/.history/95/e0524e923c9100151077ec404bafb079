@@ -1,0 +1,9 @@
+package opg2;
+
+import java.util.ArrayList;
+
+public class Order {
+	
+	private List<Products>
+
+}

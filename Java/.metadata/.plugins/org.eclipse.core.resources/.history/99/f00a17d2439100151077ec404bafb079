@@ -1,0 +1,12 @@
+package opg2;
+
+import opg2.entities.Product;
+
+public class Opg2Tester {
+
+	public static void main(String[] args) {
+		// Create a couple of products.
+		Product p1 = new Product("p1", "Shampoo La Piaf", "This is an amazingly fresh smelling, but expensive shampoo.");
+	}
+	
+}

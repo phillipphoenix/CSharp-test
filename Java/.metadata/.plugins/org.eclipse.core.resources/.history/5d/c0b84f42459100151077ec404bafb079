@@ -1,0 +1,24 @@
+package opg2;
+
+import java.util.Calendar;
+import opg2.entities.Price;
+import opg2.entities.Producer;
+import opg2.entities.Product;
+
+public class Opg2Tester {
+
+	public static void main(String[] args) {
+		// Create a couple of products.
+		Producer producer1 = new Producer("Coalition of Nigaraguan Coffee Farmers", "This is the largest coalition of coffee farmers in Nigaragua,"
+				+ "collectively producing more coffee than any producer of coffee in the world.");
+		Product p1 = new Product("p1", "Coffee Nigaragua", "This is an amazingly delisious, but expensive coffee. Weight: 0.2KG", producer1);
+		Calendar cal = Calendar.getInstance();
+		cal.set(2015, 8, 22);
+		p1.addPrice(new Price(100, "DKK", cal.getTime()));
+		cal.set(2015, 11, 18);
+		p1.addPrice(new Price(200, "DKK", cal.getTime()));
+		
+		System.out.println(p1.getProducer());
+	}
+	
+}

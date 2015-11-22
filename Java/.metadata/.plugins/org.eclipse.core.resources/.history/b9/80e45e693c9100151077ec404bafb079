@@ -1,0 +1,12 @@
+package opg2;
+
+public class Customer {
+	
+	private String title;
+	private String FirstName;
+	private String LastName;
+	private Address address;
+	private String phone;
+	private String email;
+
+}

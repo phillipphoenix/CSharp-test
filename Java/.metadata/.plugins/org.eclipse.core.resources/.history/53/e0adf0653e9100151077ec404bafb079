@@ -1,0 +1,55 @@
+package opg2;
+
+import java.util.List;
+
+public class Product {
+
+	private String productNb;
+	private String name;
+	private String description;
+	/**
+	 * List of prices for this product. Current price is the price that has been activated the last.
+	 */
+	private List<Price> prices;
+	
+	public Product(String productNb, String name, String description, List<Price> prices) {
+		super();
+		this.productNb = productNb;
+		this.name = name;
+		this.description = description;
+		this.prices = prices;
+	}
+
+	public String getProductNb() {
+		return productNb;
+	}
+
+	public void setProductNb(String productNb) {
+		this.productNb = productNb;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public List<Price> getPrices() {
+		return prices;
+	}
+
+	public void setPrices(List<Price> prices) {
+		this.prices = prices;
+	}
+	
+}

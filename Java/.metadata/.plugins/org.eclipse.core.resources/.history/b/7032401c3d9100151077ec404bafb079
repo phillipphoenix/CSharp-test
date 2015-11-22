@@ -1,0 +1,19 @@
+package opg2;
+
+import java.util.List;
+
+public class Order {
+	
+	private List<Product> products;
+	private Customer customer;
+	private double totalPrice;
+	private String currency;
+	private Address deliveryAddress;
+	private String trackAndTraceNb;
+	private OrderStatus status;
+
+	public enum OrderStatus {
+		UNSHIPPED, SHIPPED, CANCELLED
+	}
+	
+}

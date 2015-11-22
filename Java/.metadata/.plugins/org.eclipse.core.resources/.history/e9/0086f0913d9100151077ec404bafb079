@@ -1,0 +1,70 @@
+package opg2;
+
+public class Customer {
+	
+	private int id;
+	private String title;
+	private String FirstName;
+	private String LastName;
+	private Address address;
+	private String phone;
+	private String email;
+	
+	public Customer(String title, String firstName, String lastName, Address address, String phone, String email) {
+		this.title = title;
+		FirstName = firstName;
+		LastName = lastName;
+		this.address = address;
+		this.phone = phone;
+		this.email = email;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getFirstName() {
+		return FirstName;
+	}
+
+	public void setFirstName(String firstName) {
+		FirstName = firstName;
+	}
+
+	public String getLastName() {
+		return LastName;
+	}
+
+	public void setLastName(String lastName) {
+		LastName = lastName;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+}

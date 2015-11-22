@@ -1,0 +1,11 @@
+package opg2;
+
+import java.util.List;
+
+public class Order {
+	
+	private List<Product> products;
+	private double totalPrice;
+	private String currency;
+
+}
