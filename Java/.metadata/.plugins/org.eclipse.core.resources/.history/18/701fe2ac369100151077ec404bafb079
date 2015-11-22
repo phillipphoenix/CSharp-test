@@ -1,0 +1,9 @@
+package opg1;
+
+public class FizzBuzz {
+
+	public void DoFizzBuzz(int[] numbers) {
+		
+	}
+	
+}

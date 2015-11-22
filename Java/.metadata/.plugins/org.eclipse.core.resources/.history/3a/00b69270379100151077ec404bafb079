@@ -1,0 +1,28 @@
+package opg1;
+
+public class FizzBuzz {
+
+	public static void DoFizzBuzz(int[] numbers) {
+		for (int n : numbers) {
+			boolean divisibleBy3, divisibleBy5;
+			divisibleBy3 = IsDivisibleBy3(n);
+			// If divisible by 3.
+			if (divisibleBy3) {
+				divisibleBy5 = IsDivisibleBy5(n);
+				// If divisible by 3 and 5.
+				if (divisibleBy5) {
+					
+				}
+			}
+		}
+	}
+	
+	private static boolean IsDivisibleBy3(int number) {
+		return number % 3 == 0;
+	}
+	
+	private static boolean IsDivisibleBy5(int number) {
+		return number % 5 == 0;
+	}
+	
+}

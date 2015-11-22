@@ -1,0 +1,28 @@
+package opg1;
+
+public class FizzBuzz {
+
+	public static void DoFizzBuzz(int[] numbers) {
+		for (int n : numbers) {
+			// If divisible by 3.
+			if (IsDivisibleBy(n, 3)) {
+				System.out.print("Fizz");
+				// If divisible by 3 and 5.
+				if (IsDivisibleBy(n, 5)) {
+					System.out.print("Buzz");
+				}
+				System.out.println();
+				return;
+			}
+			// If divisible by 5 only.
+			if (IsDivisibleBy(n, 5)) {
+				System.out.println("Buzz");
+			}
+		}
+	}
+	
+	private static boolean IsDivisibleBy(int number, int dividedBy) {
+		return number % dividedBy == 0;
+	}
+	
+}

@@ -1,0 +1,17 @@
+package opg1;
+
+public class FizzBuzz {
+
+	public static void DoFizzBuzz(int[] numbers) {
+		
+	}
+	
+	private static boolean IsDivisibleBy3(int number) {
+		
+	}
+	
+	private static boolean IsDivisibleBy5(int number) {
+		
+	}
+	
+}
