@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\Price.cs" />
@@ -96,6 +97,10 @@
     <Compile Include="Migrations\201511180005446_SaleEndsRemoved.cs" />
     <Compile Include="Migrations\201511180005446_SaleEndsRemoved.Designer.cs">
       <DependentUpon>201511180005446_SaleEndsRemoved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511221748486_SeparateAddress.cs" />
+    <Compile Include="Migrations\201511221748486_SeparateAddress.Designer.cs">
+      <DependentUpon>201511221748486_SeparateAddress.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -140,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511180005446_SaleEndsRemoved.resx">
       <DependentUpon>201511180005446_SaleEndsRemoved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511221748486_SeparateAddress.resx">
+      <DependentUpon>201511221748486_SeparateAddress.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

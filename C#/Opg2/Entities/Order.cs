@@ -16,15 +16,10 @@ namespace Opg2.Entities
         public string Currency { get; set; } // The total price' currency.
         public OrderStatus Status { get; set; } // The status of the order. See enum below.
         public string TrackAndTraceNb { get; set; } // The track and trace number for tracing the package.
-        public string Address1 { get; set; }
-        public string Address2 { get; set; }
-        public string PostalCode { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string Country { get; set; }
-
         public int CustomerId { get; set; }
+        public int AddressId { get; set; }
         public virtual Customer Customer { get; set; } // The reference to the customer.
+        public virtual Address DeliveryAddress { get; set; } // The delivery address of the order.
         public virtual List<Product> Products { get; set; } // The references to all the products in this order.
 
 
@@ -33,17 +28,11 @@ namespace Opg2.Entities
             Products = new List<Product>();
         }
 
-        public Order(string currency, string address1, string address2, string postalCode, string city, string state,
-            string country, Customer customer, params Product[] products) : this()
+        public Order(string currency, Address deliveryAddress, Customer customer, params Product[] products) : this()
         {
             OrderDateTime = DateTime.Now;
             Currency = currency;
-            Address1 = address1;
-            Address2 = address2;
-            PostalCode = postalCode;
-            City = city;
-            State = state;
-            Country = country;
+            DeliveryAddress = deliveryAddress;
             Customer = customer;
 
             // Add the products and increase the price.

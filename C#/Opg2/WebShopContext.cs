@@ -67,9 +67,9 @@ namespace Opg2
                 product1.Prices.Add(price1);
                 product1.Prices.Add(price2);
                 // Customer 1
-                var customer0 = new Customer { Id = 1, FirstName = "Leslie", LastName = "McArthur" };
+                var customer0 = new Customer { Id = 1, FirstName = "Leslie", LastName = "McArthur", CurrentAddress = new Address("Lærkevang 23", "3, TH", "1234", "København", "", "Danmark") };
                 // Order 1
-                var order0 = new Order("DKK", "Lærkevang 23", "3, TH", "1234", "København", "", "Danmark", customer0,
+                var order0 = new Order("DKK", customer0.CurrentAddress, customer0,
                     product0, product1);
                 order0.Id = 1;
 
